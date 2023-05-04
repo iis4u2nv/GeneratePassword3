@@ -1,7 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 function generatePassword() {
-  var length = [">8 <128"];
   var numbers = "0123456789";
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -55,11 +54,6 @@ console.log(characters);
 password += characters;
 console.log("New Password", password); 
 }
-
-
-
-
-  // for (let i = 0; i < generatePassword; i++)
   return password
 }
 // Write password to the #password input
