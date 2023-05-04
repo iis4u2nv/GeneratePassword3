@@ -19,14 +19,6 @@ function generatePassword() {
   var charactersPool = "";
 
 
-  console.log(lowerCasePrompt); 
-  console.log(charactersPrompt);
-  console.log(lowerCasePrompt);
-  console.log(numbersPrompt);
-  console.log(numbers);
-
-
-
 if (numbersPrompt) {
     charactersPool += numbers;
 } 
@@ -41,6 +33,11 @@ if (lowerCasePrompt) {
 
 if (charactersPrompt) {
   charactersPool += characters;
+}
+
+if (!numbersPrompt && !upperCasePrompt && !lowerCasePrompt && !charactersPrompt) {
+  alert ("You must select at least one option")
+  return ""
 }
 
 console.log (charactersPool);
